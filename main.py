@@ -44,7 +44,7 @@ for _ in range(5):
     get_urls(driver)
     for _ in range(6):
         driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN)
-    time.sleep(1)
+    time.sleep(1.5)
 
 print(f"lenght of links preset {len(links)}")
 links_set = set(links)
