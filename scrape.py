@@ -40,7 +40,7 @@ def get_urls(driver):
 preclick(driver)
 links = []
 
-for _ in range(5):
+for _ in range(50):
     get_urls(driver)
     for _ in range(6):
         driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN)
